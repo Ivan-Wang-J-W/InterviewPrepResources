@@ -1,6 +1,6 @@
 # Mock interviews that might be useful
 
--[[Google](url)(#Google)
+-[Google](#Google)
 
 
 
