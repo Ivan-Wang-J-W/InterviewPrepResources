@@ -1,5 +1,5 @@
-# Mock interviews that might be useful
-
+# Mock interviews 
+*These are some mock interviews that i think are good to watch through and practise*
 - [Google](#Google)
 - [META](#Meta)
 
