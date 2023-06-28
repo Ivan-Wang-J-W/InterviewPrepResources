@@ -1,3 +1,3 @@
-# Mock interviews 
+# Mock interviews that might be useful
 
  Google Software Engineer mock [coding interview](https://www.youtube.com/watch?v=riBWq1DvVb8)
