@@ -1,7 +1,7 @@
 # Mock interviews that might be useful
 
--[Google](#Google)
--[META](#Meta)
+- [Google](#Google)
+- [META](#Meta)
 
 
 
