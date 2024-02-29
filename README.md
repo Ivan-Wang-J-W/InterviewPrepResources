@@ -10,8 +10,8 @@ Currently, as of 2024-03-01 it contains 2 directories, Grind75 and Interviews. I
 
 ## Grind 75
  Under this folder, there are 2 subdirectories. 
-- [Data Structures](InterviewPrepResources/grind75/DSA) 
-- [Lc](InterviewPrepResources/grind75/Lc) 
+- [Data Structures](grind75/DSA) 
+- [Lc](grind75/Lc) 
 
 ## Interviews
 Links to Mock Interviews and resources for preparing for interviews will be here
