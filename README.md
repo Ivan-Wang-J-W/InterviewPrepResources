@@ -10,7 +10,7 @@ Currently, as of 2024-03-01 it contains 2 directories, Grind75 and Mock Intervie
 
 ## Grind 75
  Under this folder there are 2 subdirectories. 
-- [Data Structures](#Data Structures)
+- [Data Structures](#Data)
 - [Lc](#Lc)
 
 ### Data Structures
