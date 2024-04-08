@@ -19,4 +19,6 @@ Using `s = "UabBCcAs` as an example. When we iterate the string, the first insta
 
 ## What Data structure is used
 
-For this question, we are using a `Stack`. Why? We are iterating over the string and pushing our values until our string `s` is valid. When we encounter a value that is not valid, we pop it. ![example](Images/capture.png)
+For this question, we are using a `Stack`. Why? We are iterating over the string and pushing our values as long as our string `s` is valid. When we encounter a value that is not valid, we pop it. Repeat until the string is great. 
+
+[first step](images/uab.jpg)
