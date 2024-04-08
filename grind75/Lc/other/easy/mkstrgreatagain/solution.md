@@ -21,4 +21,90 @@ Using `s = "UabBCcAs` as an example. When we iterate the string, the first insta
 
 For this question, we are using a `Stack`. Why? We are iterating over the string and pushing our values as long as our string `s` is valid. When we encounter a value that is not valid, we pop it. Repeat until the string is great. 
 
+
+## Visual Explanation
+From the image below, we pushed the values `U`, `a` and `b` into the stack as they all satisfy the condition so far, but once the next value, `B` is evaluated, we find that it violates the condition. Hence `B` is not added, and `b` is removed from the stack.The top of the stack falls back to `a`.
+
+This concept repeats until the string satisfies the condition. 
+
 ![first step](images/uab.jpg)
+
+Up until here, the condition is satisfied until the next input, which is `B` the loop will check if it satisfies the condition, if it does not, it will remove it from the stack. 
+
+```
+stack.pop();
+```
+If it satisfies the condition, it will then add it to the stack.
+```
+stack.push(stack_name)
+```
+## Solution
+
+So for the first part, we declare a stack named `container`
+```
+std::stack<char> container;
+```
+We then loop through the string `s` and check if it is empty, and if the adjacent characters satisfies the condition.
+
+```
+//loop 
+for(auto current : s)
+
+//check for empty stack and condition
+
+if(!container.empty() && (current - container.top())==32);
+{
+	container.pop(); // remove if failed.
+}
+```
+Now, when we are dealing with alphabets, we are using their ASCII value. `A` and `a` have a difference of 32 in their values and so on and so forth. 
+
+
+```
+else{
+container.push(current);
+}
+```
+This loop will ensure our String input is "Great".
+
+Now to return our new string, we have to populate a temp string value with it.
+
+### Declare a new string and initiate with the size of the stack
+
+```
+int n = container.size();
+int i = n-1; 
+
+//we populate a string of size n with temporary characters '.'
+std::string ans(n, '.')
+
+```
+>filler constructor used here. 
+
+## Populate the new temp string with our final "Great" string.
+
+We loop the stack using a while loop. <br>
+
+We set the string at i to be the latest stack using : <br>
+```
+ans[i] = container.top()
+```
+
+Then we remove it from the stack after adding it to the new String `ans` and decrement it. 
+```
+container.pop();
+i--;
+```
+It will look something like this
+
+```
+while(!container.empty()){
+
+ans[i]=container.top();
+container.pop();
+i--
+}
+
+return ans;
+```
+
