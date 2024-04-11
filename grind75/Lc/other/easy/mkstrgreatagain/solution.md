@@ -108,3 +108,24 @@ i--
 return ans;
 ```
 
+
+## Time and Space Complexity 
+
+Given the total length of the string as N, and we are iterating over the string, then the time Complexity will be O(n). 
+
+```
+for(auto current :s) //O(n)
+```
+Iterating over N elements in the string
+# If we receive a "Great" string. `"aaaaaaaaaaaaaa"`. Then the first check will be ignore and only the while loop is executed. As we are also iterating over a string of size N, its time complexity will also be O(n). `O(n) + O(n) = O(2n)`. Since we ignore the coefficient, Time complexity will be O(n).
+
+The Space complexity will be O(n). 
+As we are iterating over the stack, the best case will be `aaaaaaaaa` hence we only need iterate over the string. 
+
+
+
+
+
+
+
+
