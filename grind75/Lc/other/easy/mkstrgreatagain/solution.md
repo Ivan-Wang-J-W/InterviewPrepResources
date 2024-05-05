@@ -36,7 +36,7 @@ stack.pop();
 ```
 If it satisfies the condition, it will then add it to the stack.
 ```
-stack.push(stack_name)
+stack.push(i)
 ```
 ## Solution
 
@@ -52,7 +52,7 @@ for(auto current : s)
 
 //check for empty stack and condition
 
-if(!container.empty() && (current - container.top())==32);
+if(!container.empty() && abs(current - container.top())==32);
 {
 	container.pop(); // remove if failed.
 }
